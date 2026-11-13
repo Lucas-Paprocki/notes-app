@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+.top{
+  font-size: 36px;
+}
+
+.title h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.title textarea {
+  text-align: center;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  resize: none;
+}
+
+.name-button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  color: #b9b3b3;
+}
+
+.name-button button :active{
+  outline: none;
+  border: none;
+}
+
+.title textarea:focus {
+  outline: none;
+}
+
+
+.textblock {
+   display: flex;
+    margin-top: 24px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    overflow: hidden; 
+    resize: none;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.entry-func {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-entry {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+
+.textblock textarea {
+  width: 100%;
+}
+
+.textblock textarea:focus {
+  outline: none; 
+}
+
+
+
+
+.entry-button {
+border: 1px solid #fff;
+border-radius: 12px;
+padding: 6px;
+margin: 36px;
+justify-content: center;
+}
+
+.entry-button:hover {
+border: 1px solid #fff;
+}
+
+.entry-button:active {
+background-color: #fff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 25%;
+  text-align: center;
+  line-height: 2;
+}
